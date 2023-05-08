@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +12,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="248dp"
+        android:layout_height="208dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/logo" />
 
@@ -25,20 +26,21 @@
         android:textColor="@color/sun"
         android:textSize="30sp" />
 
-    <!--Login label-->
+    <!--User name label-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login_username"
         android:textSize="20sp" />
 
-    <!--Login input-->
+    <!--Username input-->
     <EditText
+        android:id="@+id/user_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border"
-        android:inputType="text"
-        android:hint="@string/enter_your_username"/>
+        android:hint="@string/enter_your_username"
+        android:inputType="text" />
 
     <Space
         android:layout_width="match_parent"
@@ -53,28 +55,45 @@
 
     <!--Password input-->
     <EditText
+        android:id="@+id/user_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-      android:hint="@string/enter_your_password"
-        android:inputType="numberPassword" />
+        android:hint="@string/enter_your_password"
 
+
+
+        />
     <!--Login button-->
     <Button
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_login"
+
         android:textColor="@color/sun" />
+
+    <!--Register button-->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_register"
+
+        android:textColor="@color/sun" />
+
 
     <!--Forgot password label-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:focusableInTouchMode="true"
-        android:clickable="true"
         android:layout_marginTop="20sp"
-        android:textAlignment="center"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
         android:text="@string/forgot_password"
+        android:textAlignment="center"
         android:textSize="20sp" />
+
+
 
 
 </LinearLayout>

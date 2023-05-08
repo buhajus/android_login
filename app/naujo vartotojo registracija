@@ -1,0 +1,24 @@
+Naujo vartotojo registracija
+
+Sukurti naujo vartotojo registracijos langą pagal žemiau nurodytus reikalavimus:
+
+Reikalavimai validacijai:
+Prisijungimo vardas:
+- nuo 3 iki 20 symbolių;
+- mažosios ir didžiosios raidės;
+- jokių specialių symbolių;
+Slaptažodis:
+- nuo 5 iki 20 symbolių;
+- mažosios ir didžiosios raidės;
+- skaičiai;
+- specialūs symboliai (.!@_);
+El. paštas:
+- nuo 10 iki 50 symbolių;
+- mažosios ir didžiosios raidės;
+- skaičiai;
+- specialūs symboliai  (@._-).
+
+Reikalavimai veikimui:
+Iš registracijos lango į prisijungimo langą galima patekti tik praėjus validaciją.
+Jeigu registracijos validacija sėkminga, išvesti pranešimą vartotojui su jo įvestais registracijos duomenimis.
+
