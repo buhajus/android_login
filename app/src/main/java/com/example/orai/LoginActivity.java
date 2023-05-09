@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
         EditText userName = findViewById(R.id.user_name);
         EditText userPassword = findViewById(R.id.user_password);
         Button loginBtn = findViewById(R.id.btn_login);
+        Button registerBtn = findViewById(R.id.btn_register);
 
 
         //mygtuko paspaudimas
@@ -30,6 +31,9 @@ public class LoginActivity extends AppCompatActivity {
                 userName.setError(null);
                 userPassword.setError(null);
                 //aprašomas kodas mygtuko paspaudimui
+//                if(Validation.isUserNameValid(String.valueOf(userName.getText().equals(""))) ){
+//                    userName.setError(getString(R.string.empty_field_error));
+//                }
                 if (Validation.isUserNameValid(userName.getText().toString()) && Validation.isUserPasswordValid(userPassword.getText().toString())) {
 
                     //keliaujam į naują activity login-> main
@@ -59,6 +63,15 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+        registerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToRegisterActivity = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(goToRegisterActivity);
+            }
+        });
+
+
 
     }
 
