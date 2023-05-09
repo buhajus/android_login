@@ -41,7 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), getText(R.string.success_registration), Toast.LENGTH_LONG).show();
                     startActivity(goToLoginActivity);
 
-                } else if (!Validation.isUserRegistrationNameValid(userNameRegistration.getText().toString())) {
+                }  else if (!Validation.isUserRegistrationNameValid(userNameRegistration.getText().toString())) {
                     userNameRegistration.setError(getApplicationContext().getText(R.string.registration_user_name_error));
                     userNameRegistration.requestFocus();
 

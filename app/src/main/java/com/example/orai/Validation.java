@@ -7,7 +7,7 @@ public class Validation {
     private static final String USER_NAME_PATTERN = "^[A-Za-z]{3,20}$";
     private static final String USER_PASSWORD_PATTERN = "^[A-Za-z-.!@]{5,20}$";
     private static final String USER_NAME_REGISTRATION_PATTERN = "^[A-za-z]{3,20}$";
-    private static final String USER_PASSWORD_REGISTRATION_PATTERN = "^[A-za-z0-9.!@_]{1,20}$";
+    private static final String USER_PASSWORD_REGISTRATION_PATTERN = "^[A-za-z0-9.!@_]{5,20}$";
     private static final String USER_EMAIL_REGISTRATION_PATTERN = "^[A-za-z0-9@._-]{10,50}$";
 
 

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
@@ -21,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         EditText userPassword = findViewById(R.id.user_password);
         Button loginBtn = findViewById(R.id.btn_login);
         Button registerBtn = findViewById(R.id.btn_register);
+        TextView forgotPassword = findViewById(R.id.forgot_password);
 
 
         //mygtuko paspaudimas
@@ -71,7 +73,15 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+forgotPassword.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent goToResetPassword = new Intent(LoginActivity.this, SettingsActivity.class);
+        startActivity(goToResetPassword);
 
+
+    }
+});
 
     }
 
