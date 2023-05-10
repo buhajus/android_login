@@ -29,6 +29,9 @@
     <string name="user_email_hint">Enter email address</string>
     <string name="register_submit">Submit</string>
     <string name="title_activity_settings">SettingsActivity</string>
+<string name="add_weather_btn">Add weather</string>
+
+
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>

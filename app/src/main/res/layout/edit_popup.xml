@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/light_blue"
+    android:padding="10dp"
+    android:id="@+id/popup">
+
+    <EditText
+
+        android:id="@+id/edit_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter country"
+
+        />
+
+    <EditText
+
+        android:id="@+id/edit_degrees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/edit_country"
+        android:layout_marginTop="10dp"
+        android:hint="Enter degrees"
+
+        />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_degrees"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        android:textColor="@color/sun" />
+
+
+</RelativeLayout>

@@ -18,9 +18,11 @@
             android:label="@string/title_activity_settings" />
         <activity
             android:name=".ResetPasswordActivity"
+            android:label="Recover your password"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
+            android:label="Registration"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

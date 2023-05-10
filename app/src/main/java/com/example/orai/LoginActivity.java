@@ -40,8 +40,8 @@ public class LoginActivity extends AppCompatActivity {
 
                     //keliaujam į naują activity login-> main
                     //sukuriamas Intent pereiti iš LoginActivity į MainActivity
-                    Intent goToMainActivity = new Intent(LoginActivity.this,MainActivity.class);
-                   //inicijuojamas naujas activity
+                    Intent goToMainActivity = new Intent(LoginActivity.this, MainActivity.class);
+                    //inicijuojamas naujas activity
                     startActivity(goToMainActivity);
 
 
@@ -52,14 +52,14 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();*/
 
 
-                }else {
+                } else {
 
                     userName.setError(getResources().getString(R.string.login_error));
-                   userName.requestFocus();
+                    userName.requestFocus();
 
                     userPassword.setError(getResources().getString(R.string.login_error));
 
-                    Toast.makeText(getApplicationContext(),R.string.login_error,Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.login_error, Toast.LENGTH_LONG).show();
                 }
 
 
@@ -73,15 +73,15 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-forgotPassword.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent goToResetPassword = new Intent(LoginActivity.this, SettingsActivity.class);
-        startActivity(goToResetPassword);
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToResetPassword = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+                startActivity(goToResetPassword);
 
 
-    }
-});
+            }
+        });
 
     }
 
