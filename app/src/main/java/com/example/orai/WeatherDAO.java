@@ -5,14 +5,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.view.LayoutInflater;
-
-import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import kotlinx.coroutines.selects.WhileSelectKt;
 
 public class WeatherDAO extends SQLiteOpenHelper {
 
@@ -57,7 +52,7 @@ public class WeatherDAO extends SQLiteOpenHelper {
 
     }
 
-    public List<Weather> getALL() {
+    public List<Weather> getAll() {
         List<Weather> weathers = new ArrayList<>();
         String query = "SELECT * FROM " + TABLE_NAME;
         SQLiteDatabase db = this.getReadableDatabase();
